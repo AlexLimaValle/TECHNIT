@@ -809,6 +809,309 @@
     margin-bottom: 10px;
 }
 
+.seccion__seven{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 60%;
+    position: relative;
+}
+
+.seccion__seven .seccion__seven-animation{
+    position:absolute;
+    animation: subir 2s infinite linear;
+    transition: all 5s;
+}
+
+.seccion__seven .seccion__seven-animation.seccion__seven-animation--position-1{
+    top:10%;
+    left: 60%;
+    
+}
+
+.seccion__seven .seccion__seven-animation.seccion__seven-animation--position-2{
+    top:10%;
+    left: 33%;
+}
+
+.seccion__seven .seccion__seven-animation.seccion__seven-animation--position-3{
+    bottom:10%;
+    left: 60%;
+    animation: izq 2s infinite linear;
+}
+
+.seccion__seven .seccion__seven-animation.seccion__seven-animation--position-4{
+    bottom:10%;
+    left: 33%;
+    animation: izq 2s infinite linear;
+}
+
+.seccion__seven .seccion__seven-top{
+    text-align: center;
+}
+
+@keyframes subir{
+    50%{
+        margin-top: 10px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+@keyframes izq{
+    50%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.seccion__seven .seccion__seven-top .seccion__seven-ckecks{
+
+}
+
+.seccion__seven .seccion__seven-top .seccion__seven-ckecks .seccion__seven-pulgar{
+    font-size: 3rem;
+    color:var(--azul);
+}
+.seccion__seven .seccion__seven-top .seccion__seven-titles{
+    font-size: 1.5rem;
+}
+.seccion__seven .seccion__seven-top .seccion__seven-titles .seccion__seven-h2{
+
+}
+
+.seccion__seven .seccion__seven-top .seccion__seven-titles .seccion__seven-subtitle{
+
+}
+
+
+.seccion__seven .seccion__seven-middler{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.seccion__seven .seccion__seven-middler .seccion__seven-middler-carrusel{
+    width: 200vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.seccion__seven .seccion__seven-middler .seccion__seven-middler-carrusel .seccion__seven-middler-carrusel-cards{
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__seven .seccion__seven-middler .seccion__seven-middler-carrusel .seccion__seven-middler-carrusel-cards .seccion__seven-middler-carrusel-card{
+    width: 90%;
+    height: 70%;
+    border: 3px #d2d2d2 solid;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.seccion__seven .seccion__seven-middler .seccion__seven-middler-carrusel .seccion__seven-middler-carrusel-cards .seccion__seven-middler-carrusel-card .seccion__seven-middler-carrusel-p{
+    width: 70%;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+}
+
+.seccion__seven .seccion__seven-middler .seccion__seven-middler-carrusel .seccion__seven-middler-carrusel-cards .seccion__seven-middler-carrusel-card .seccion__seven-middler-carrusel-nombre{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+
+}
+
+.seccion__eight{
+    width: 100%;
+    height: 50vh;
+    background-color: var(--azul);
+    color: var(--blanco);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 15% 60% 20%;
+    grid-template-rows: 85% 10%;
+    grid-template-areas: 
+    "s c e"
+    "b b b"
+    ;
+}
+
+.seccion__eight .seccion__eight-start{
+    grid-area: s;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-start .seccion__eight-start-img{
+    width: 80%;
+    height: 25%;
+    margin-top: 10px;
+}
+
+.seccion__eight .seccion__eight-start .seccion__eight-start-img .seccion__eight-start-logo{
+    width: 100%;
+    height: 100%;
+}
+
+.seccion__eight .seccion__eight-start .seccion__eight-start-title{
+    width: 80%;
+    height: 30%;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+.seccion__eight .seccion__eight-start .seccion__eight-start-title .seccion__eight-start-p{
+    text-align: center;
+}
+
+.seccion__eight .seccion__eight-start .seccion__eight-start-social{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-start .seccion__eight-start-social .seccion__eight-start-social-item{
+    height: 80%;
+    width: 23%;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #fff;
+}
+
+.seccion__eight .seccion__eight-center{
+    grid-area: c;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion__eight .seccion__eight-center .seccion__eight-text{
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-center .seccion__eight-text .seccion__eight-text-h2{
+    font-size: 2.1rem;
+}
+
+.seccion__eight .seccion__eight-center .seccion__eight-text .seccion__eight-text-p{
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.seccion__eight .seccion__eight-center .seccion__eight-text .seccion__eight-text-a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--blanco);
+
+}
+
+.seccion__eight .seccion__eight-center .seccion__eight-text .seccion__eight-text-a .seccion__eight-text-i--left{
+    margin-left: 5px;
+}
+.seccion__eight .seccion__eight-end{
+    grid-area: e;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card .seccion__eight-end-card-img{
+    width: 30%;
+    height: 100%;
+    font-size: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card .seccion__eight-end-card-img .seccion__eight-end-card-logo{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card .seccion__eight-end-card-text{
+    display: inline-block;
+    width: 65%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card .seccion__eight-end-card-text .seccion__eight-end-card-p{
+    margin-top: 10px;
+}
+
+.seccion__eight .seccion__eight-end .seccion__eight-end-card .seccion__eight-end-card-text .seccion__eight-end-card-numbers{
+
+}
+
+.seccion__eight .seccion__eight-bottom{
+    grid-area: b;
+    width: 100%;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion__eight .seccion__eight-bottom .seccion__eight-bottom-line{
+    width: 40%;
+    height: 5%;
+    background-color: var(--blanco);
+}
+
+.seccion__eight .seccion__eight-bottom .seccion__eight-bottom-line.seccion__eight-bottom-line--left{
+    width: 40%;
+    height: 5%;
+}
+
+.seccion__eight .seccion__eight-bottom .seccion__eight-bottom-footer{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+}
 
 @media screen and (max-width:360px){
     .header{
